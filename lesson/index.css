@@ -1,0 +1,56 @@
+/* .flex-me {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+} */
+
+#transition-text {
+  margin-left: 100px;
+  font-size: 36px;
+  transition: margin-left 5s;
+  transition: font-size 5s;
+}
+#transition-text-two {
+  position: absolute;
+  left: 100px;
+  margin-left: -100px;
+  transition: margin-left 5s;
+}
+#hover-me {
+  margin-top: 100px;
+}
+/* syntax to effect another element on hover */
+/* #hover-me:hover ~ #gizmo-image {
+  height: 150px;
+  width: 150px;
+} */
+/* create a background and animate it during the lesson */
+#gizmo-image {
+  height: 150px;
+  width: 150px;
+  -webkit-transition: height 5s;
+}
+
+#gizmo-image:hover {
+  /* width: 1000px;
+  height: 1000px; */
+  animation: animateImageToLarge 5s;
+}
+
+@keyframes animateImageToLarge {
+  from {
+    height: 150px;
+    width: 150px;
+  }
+  to {
+    height: 1000px;
+    width: 1000px;
+  }
+}
+
+@keyframes animateImageToSmall {
+  to {
+    height: 150px;
+    width: 150px;
+  }
+}

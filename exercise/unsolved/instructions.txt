@@ -1,0 +1,7 @@
+1. Pick 5 of your favorite albums and display the album images on the page
+2. Have it be responsive with the browser size
+3. When you hover over an image:
+  - the album becomes more transparent
+  - the album text shows
+4. The album text only shows when you hover over the image
+5. Use LESS

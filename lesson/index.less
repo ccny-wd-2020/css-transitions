@@ -1,0 +1,29 @@
+@transition : margin-left 5s;
+
+@imageHeightAndWidth : 150 px;
+
+@goodMargin : 100px;
+
+#transition-text {
+  margin-left: @goodMargin;
+  transition: @transition;
+}
+
+#transition-text-two {
+  position: absolute;
+  left: @goodMargin;
+  margin-left: -100px;
+  transition: @transition;
+}
+
+#hover-me {
+  margin-top: @goodMargin;
+}
+
+/* syntax to effect another element on hover */
+#hover-me:hover ~ #gizmo-image {
+  height: @imageHeightAndWidth;
+  width: @imageHeightAndWidth;
+}
+
+/* create a background and animate it during the lesson */
