@@ -1,0 +1,39 @@
+img {
+  height: 250px;
+  width: 250px;
+}
+.container {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.centeredAndResponsive {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+#queen-album-text {
+  font-size: 18px;
+}
+.album-name {
+  position: absolute;
+  margin: -120px 0px 0px 60px;
+  opacity: 0 ;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #85144b;
+}
+.album-image:hover {
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+/* https://stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling */
+.album-image:hover ~ .album-name {
+  opacity: 1;
+  transition: opacity 1s;
+}
